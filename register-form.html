@@ -10,10 +10,27 @@
     <div id="form">
         <form action="register-form.html" method="get">
             <fieldset>
-                <legend>Formulario de registro</legend>
-                <input type="email" name="username">
-                <input type="password" name="password" id="pass">
-                <input type="text" name="name">
+                <legend>Datos de Registro</legend>
+                <label>
+                    <p>Email</p>
+                    <input type="email" name="username" placeholder="Email" required>
+                </label>
+                <label>
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="Contraseña" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label>
+                    <p>Introduce tu nombre</p>
+                    <input type="text" name="name" placeholder="Nombre completo" minlength="2" maxlength="6">
+                </label>
+
+                <label>
+                    <p>Introduce tu edad</p>
+                    <input type="number" name="age" placeholder="Edad" min="18" max="30">
+                </label>
                 <input type="submit" value="Enviar">
             </fieldset>
         </form>
